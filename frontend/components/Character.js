@@ -13,7 +13,7 @@ function Character({ planets, person }) { // ❗ Add the props
     <div className='character-card' onClick={clickHandler}>
       {/* Use the same markup with the same attributes as in the mock */}
       <h3 className='character-name'>{person.name}</h3>
-      {isVisible && <p className='character-planet'>Planet: {<span className='character-planet'>{homeworld.name}</span>}</p>}
+      {isVisible && <p>Planet: {<span className='character-planet'>{homeworld.name}</span>}</p>}
     </div>
   )
 }
